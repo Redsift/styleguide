@@ -1,0 +1,21 @@
+{
+  "eqeqeq": true,
+  "camelcase": true,
+  "curly": true,
+  "newcap": true,
+  "nonbsp": true,
+  "nonew": true,
+  "plusplus": true,
+  "quotmark": "single",
+  "freeze": true,
+  "forin": true,
+  "latedef": true,
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "esnext": true,
+  "node": true,
+  "mocha": true,
+  "unused": false,
+  "eqnull": true
+}
