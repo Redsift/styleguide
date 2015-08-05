@@ -3,4 +3,4 @@
 # *** NOTE: *** 
 # Make sure jshint and jshint-stylish-ex are installed via 'npm install -g ...'
 
-jshint --reporter=/usr/local/lib/node_modules/jshint-stylish-ex/stylish.js --config=./.jshintrc --exclude-path=../.gitignore --exclude-path=../.jshintignore $1
+jshint --reporter=/usr/local/lib/node_modules/jshint-stylish-ex/stylish.js --config=./styleguide/.jshintrc --exclude-path=./.gitignore --exclude-path=./.jshintignore $1
