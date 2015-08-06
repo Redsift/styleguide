@@ -11,11 +11,10 @@
   "forin": true,
   "latedef": true,
   "undef": true,
-  "unused": true,
+  "unused": false,
   "strict": true,
   "esnext": true,
   "node": true,
   "mocha": true,
-  "unused": false,
   "eqnull": true
 }
