@@ -16,5 +16,6 @@
   "esnext": true,
   "node": true,
   "mocha": true,
-  "eqnull": true
+  "eqnull": true,
+  "predef": [ "alert", "XMLHttpRequest", "define", "EventSource", "webkit", "parent", "document", "window", "indexedDB", "Promise", "require", "module" ]
 }
