@@ -1,47 +1,117 @@
 {
   "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true,
     "jasmine": true,
     "node": true,
     "mocha": true,
-    "browser": true,
     "builtin": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "installedESLint": true,
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "classes": true,
+      "generators": true,
+      "objectLiteralShorthandMethods": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "require": true,
+    "console": true,
+    "Promise": true,
+    "module": true,
+    "clearInterval": true,
+    "setInterval": true,
+    "clearTimeout": true,
+    "setTimeout": true,
+    "setImmediate": true,
+    "Map": true,
+    "Buffer": true,
+    "__dirname": true,
+    "process": true,
+    "Meteor": true,
+    "Accounts": true,
+    "document": true,
+    "window": true,
+    "indexedDB": true,
+    "define": true
   },
   "rules": {
     "block-scoped-var": 2,
-    "camelcase": 2,
-    "comma-style": [ 2, "last" ],
-    "curly": [ 2, "all" ],
-    "dot-notation": [ 2, { "allowKeywords": true } ],
-    "eqeqeq": [ 2, "allow-null" ],
-    "global-strict": [ 2, "never" ],
-    "guard-for-in": 2,
+    "eqeqeq": [
+      2,
+      "allow-null"
+    ],
+    "camelcase": 1,
+    "curly": [
+      1,
+      "all"
+    ],
     "new-cap": 2,
+    "no-irregular-whitespace": 1,
+    "no-new": 1,
+    "quotes": [
+      1,
+      "single"
+    ],
+    "no-extend-native": 1,
+    "guard-for-in": 2,
+    "no-undef": 2,
+    "strict": [
+      2,
+      "global"
+    ],
+    "no-unused-vars": 1,
+    "semi": [
+      1,
+      "always"
+    ],
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "comma-style": [
+      2,
+      "last"
+    ],
+    "dot-notation": [
+      2,
+      {
+        "allowKeywords": true
+      }
+    ],
     "no-bitwise": 2,
     "no-caller": 2,
-    "no-cond-assign": [ 2, "except-parens" ],
+    "no-cond-assign": [
+      2,
+      "except-parens"
+    ],
     "no-debugger": 2,
     "no-empty": 2,
     "no-eval": 2,
-    "no-extend-native": 2,
     "no-extra-parens": 2,
-    "no-irregular-whitespace": 2,
     "no-iterator": 2,
     "no-loop-func": 2,
     "no-multi-str": 2,
-    "no-new": 2,
     "no-plusplus": 2,
     "no-proto": 2,
     "no-script-url": 2,
     "no-sequences": 2,
     "no-shadow": 2,
-    "no-undef": 2,
-    "no-unused-vars": 2,
-    "no-use-before-define": true,
+    "no-use-before-define": 2,
     "no-with": 2,
-    "quotes": [ 2, "single" ],
-    "semi": [ 0, "never" ],
-    "strict": 2,
     "valid-typeof": 2,
-    "wrap-iife": [ 2, "inside" ]
+    "wrap-iife": [
+      2,
+      "inside"
+    ]
   }
 }
